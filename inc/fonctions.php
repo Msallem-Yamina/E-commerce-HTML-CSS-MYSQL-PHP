@@ -268,4 +268,25 @@ function getAllcmd(){
     $resultat = $conn->query($req);
     return true;
     }
+        function getdata(){
+        $data = array();
+        $conn = accesbd();
+        // Nmbre des produits
+        $req = "SELECT count(*) FROM produits " ;
+        $res = $conn->query($req);
+        $nbrprod = $res->fetch();
+         // Nmbre des categories
+         $req1 = "SELECT count(*) FROM categories " ;
+         $res = $conn->query($req1);
+         $nbrcat = $res->fetch();
+          // Nmbre des visiteurs
+        $req2 = "SELECT count(*) FROM visiteurs " ;
+        $res =$conn->query($req2);
+        $nbrclient = $res->fetch();
+
+        $data["produits"] = $nbrprod[0];
+        $data["categories"] = $nbrcat[0];
+        $data["clients"] = $nbrclient[0];
+        return $data;
+    }
 ?>
