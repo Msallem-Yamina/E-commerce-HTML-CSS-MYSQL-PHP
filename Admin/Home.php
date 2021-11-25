@@ -1,5 +1,8 @@
-
 <?php
+session_start();
+include "../inc/fonctions.php";
+$data = getData(); // get les donneés en form de tableau.
+
 
 ?>
 <!doctype html>
@@ -24,7 +27,7 @@
 
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="">Espace Admin</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Espace Admin</a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -34,15 +37,31 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row">
-        <?php 
-        include "template/sidebar.php";
-        ?>
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-        <h1 class="h2">Home</h1>
-       
-        </main>
-      </div>
+          <div class="row">
+            <?php 
+            include "template/sidebar.php";
+            ?>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Home </h1>
+                </div>
+                <div class="row col-12">
+                  <div class="col-3 text-center bg-primary text-white m-2 p-2">
+                  Nombre des produits : 
+                  <?php echo $data['produits'];?>
+                  </div>
+                  <div class="col-3 text-center bg-primary text-white m-2 p-2">
+                  Nombre des clients : 
+                  <?php echo $data['clients'];?>
+                  </div>
+                  <div class="col-3 text-center bg-primary text-white m-2 p-2">
+                  Nombre des catégories : 
+                  <?php echo $data['categories'];?>
+                  </div>
+                </div>
+              
+            </main>
+         </div> 
     </div>
 
     <!-- Bootstrap core JavaScript
