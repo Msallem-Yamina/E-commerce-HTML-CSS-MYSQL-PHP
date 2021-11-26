@@ -9,3 +9,4 @@
 ![stck](https://user-images.githubusercontent.com/38477281/143494532-d2807517-7ab2-4055-9ad7-f000a4373a42.JPG)
 ![pan](https://user-images.githubusercontent.com/38477281/143494538-39fb6dbc-9f9c-4f51-b51d-c2336a75541c.JPG)
 ![prf](https://user-images.githubusercontent.com/38477281/143494548-088cf468-f44c-4096-96a8-9e2979fde9fb.JPG)
+![pann](https://user-images.githubusercontent.com/38477281/143564496-eeb7bf71-6504-40ac-8730-626723ae2370.JPG)
