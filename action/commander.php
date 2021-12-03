@@ -31,7 +31,7 @@ if(!isset($_SESSION['panier'])){ // si panier n'existe pas
     $_SESSION['panier'] = array ($visiteur,0,$total, array()); //creation de panier
 
 }
-    $_SESSION['panier'][1] += $total; // += cad ancien valeur total + nouveau total jdid. 
+    $_SESSION['panier'][1] += $total; // += cad ancien valeur total + nouveau total. 
     $_SESSION['panier'][3][] = array ($idprod,$qte,$total,$date,$date, $produit['nom']); //sinon on commander direct 
 
     
